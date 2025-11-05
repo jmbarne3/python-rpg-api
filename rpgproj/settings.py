@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     'debug_toolbar',
     'rest_framework',
-    'drf_spectacular',
 
     'rpg'
 ]
@@ -72,18 +71,6 @@ TEMPLATES = [
         },
     },
 ]
-
-REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-}
-
-SPECTACULAR_SETTINGS = {
-    'TITLE': 'RPG API',
-    'DESCRIPTION': 'Provides api views for RPG characters, classes and items.',
-    'VERSION': '1.0.0',
-    'SERVE_INCLUDE_SCHEMA': True,
-    # OTHER SETTINGS
-}
 
 WSGI_APPLICATION = 'rpgproj.wsgi.application'
 
